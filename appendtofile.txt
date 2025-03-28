@@ -6,8 +6,9 @@ frontend haproxy-main
 
 backend apache_webservers
     balance roundrobin
-    server websvr1	192.168.1.10:80 check
-    server websvr2	192.168.1.11:80 check
+    server Albright-webserv1	172.18.1.55:80 check
+    server Albright-webserv2	172.18.1.66:80 check
+    server Albright-webserv3    172.18.1.77:80 check
 
 listen stats
     bind :8800
